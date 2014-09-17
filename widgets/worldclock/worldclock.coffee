@@ -37,5 +37,5 @@ class Dashing.Worldclock extends Dashing.Widget
 
   startTime: =>
     today = moment(new Date()).tz(@get('timezone'))
-    @set('time', today.format('h:mm a'))
+    @set('time', today.format('HH:mm:ss'))
     @set('date', today.format("MMM Do"))
